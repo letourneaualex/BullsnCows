@@ -47,7 +47,7 @@ def game_loop():
     while True:
         print("Guess #" + str(numTry))
         userNum = user_num()
-        cow = num_check(randNum, userNum)
+        bull = num_check(randNum, userNum)
         numTry += 1
         if bull == 3:
             print("Congratulation, You found the right number in " + str(numTry) + " guesses!")
