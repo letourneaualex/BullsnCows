@@ -1,2 +1,2 @@
 # CowBull
-Exercise in number guessing from human to dumb computer to machine learning.
+Exercise in number guessing from human to dumb computer to machine learning... hopefully!
