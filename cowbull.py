@@ -27,17 +27,17 @@ def user_num():
 
 
 def num_check(randNum, userNum):
-    """Checks the number of cows and bulls."""
-    cow = 0
+    """Checks the number of bulls and cows."""
     bull = 0
+    cow = 0
     for i in range(0, 3):
         if userNum[i] == randNum[i]:
-            cow += 1
-        else:
             bull += 1
-    print("You have " + str(cow) + " cow(s) and you have " + str(bull) + " bull(s).")
+        else:
+            cow += 1
+    print("You have " + str(bull) + " bull(s) and you have " + str(cow) + " cow(s).")
     print()
-    return cow
+    return bull
 
 
 def game_loop():
@@ -49,7 +49,7 @@ def game_loop():
         userNum = user_num()
         cow = num_check(randNum, userNum)
         numTry += 1
-        if cow == 3:
+        if bull == 3:
             print("Congratulation, You found the right number in " + str(numTry) + " guesses!")
             return False
 
